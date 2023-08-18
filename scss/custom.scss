@@ -1,0 +1,67 @@
+@import "../bootstrap-5.3.1/scss/bootstrap.scss";
+
+// Nav bar //
+
+.section_one {
+    background-image: url(../images/bkg-hero-header.jpg);
+    height: 95vh;
+    background-size: cover;
+
+
+    header {
+        .logo {
+            width: 150px;
+        }
+    
+        .nav-item {
+            & a {
+                color: white;
+            }
+        }   
+    }
+
+    div:nth-child(2) {
+        p {
+            color: white !important;
+        }
+
+        h1 {
+            color: white !important;
+            & span {
+                color: #ffb81c;
+            }
+            
+        }
+    }
+
+}
+
+.custom-button {
+    border: 3px solid white; 
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white; 
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 250px;
+    height: 65px;
+}
+
+.custom-button:hover {
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-color: white; 
+}
+
+.custom-button2 {
+    background-color: #ffb81c;
+    border-color: #ffb81c; 
+    color: white; 
+    width: 250px;
+    height: 65px;
+    border : none;
+}
+
+// btn btn-outline-light rounded-0 btn-lg px-4 gap-3
+
+
+
+
+
