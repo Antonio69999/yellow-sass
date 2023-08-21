@@ -11850,24 +11850,28 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.section_one {
+html {
+  overflow-x: hidden;
+}
+
+.header_section {
   background-image: url(../images/bkg-hero-header.jpg);
   height: 95vh;
   background-size: cover;
 }
-.section_one header .logo {
+.header_section header .logo {
   width: 150px;
 }
-.section_one header .nav-item a {
+.header_section header .nav-item a {
   color: white;
 }
-.section_one div:nth-child(2) p {
+.header_section div:nth-child(2) p {
   color: white !important;
 }
-.section_one div:nth-child(2) h1, .section_one div:nth-child(2) .h1 {
+.header_section div:nth-child(2) h1, .header_section div:nth-child(2) .h1 {
   color: white !important;
 }
-.section_one div:nth-child(2) h1 span, .section_one div:nth-child(2) .h1 span {
+.header_section div:nth-child(2) h1 span, .header_section div:nth-child(2) .h1 span {
   color: #ffb81c;
 }
 
@@ -11892,6 +11896,147 @@ textarea.form-control-lg {
   width: 250px;
   height: 65px;
   border: none;
+}
+
+.hash {
+  background-image: linear-gradient(133deg, #f1f5f0 16.67%, #fffffc 16.67%, #fffffc 50%, #f1f5f0 50%, #f1f5f0 66.67%, #fffffc 66.67%, #fffffc 100%);
+  background-size: 12.31px 13.2px;
+}
+
+.image_gallery .row .column {
+  width: 25%;
+  padding: 0;
+  padding-top: 0;
+}
+.image_gallery .row .column img {
+  height: 100%;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100% !important;
+  }
+}
+.testimonials {
+  background-image: url(../images/bkg-testimonial.jpg);
+  height: 95vh;
+  background-size: cover;
+  color: white;
+}
+.testimonials .testimonials__avatar {
+  border-radius: 50%;
+  width: 150px;
+}
+.testimonials .testimonials__bubble {
+  background: #715292;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 3px;
+  width: 660px;
+  height: 120px;
+  position: relative;
+}
+.testimonials .testimonials__bubble::after {
+  content: "";
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #715292;
+  position: absolute;
+  top: 100%;
+  left: 42%;
+}
+
+.services .services__pencil {
+  filter: invert(76%) sepia(97%) saturate(485%) hue-rotate(301deg) brightness(95%) contrast(100%);
+}
+.services .services__pencil__title {
+  filter: invert(76%) sepia(97%) saturate(485%) hue-rotate(301deg) brightness(95%) contrast(100%);
+}
+.services__html {
+  filter: invert(89%) sepia(71%) saturate(2546%) hue-rotate(309deg) brightness(103%) contrast(102%);
+}
+.services__html__title {
+  color: #ffb81c;
+}
+.services__search {
+  filter: invert(76%) sepia(5%) saturate(1281%) hue-rotate(209deg) brightness(100%) contrast(70%);
+}
+.services__search__title {
+  filter: invert(76%) sepia(5%) saturate(1281%) hue-rotate(209deg) brightness(100%) contrast(70%);
+}
+
+.latestNews {
+  background-color: #353c45;
+  color: white;
+}
+.latestNews__button {
+  color: white !important;
+}
+.latestNews__arrow {
+  filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(43deg) brightness(120%) contrast(99%);
+}
+.latestNews__card1 {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.latestNews__card2 {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.latestNews__card3 {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.latestNews__chevron {
+  color: #ffb81c !important;
+  text-decoration: none !important;
+}
+.latestNews__chevron img {
+  filter: invert(70%) sepia(97%) saturate(758%) hue-rotate(342deg) brightness(103%) contrast(102%);
+}
+
+.counter {
+  background-image: url(../images/bkg-counter.jpg);
+  color: white !important;
+}
+.counter .container {
+  display: flex;
+  text-align: center;
+}
+.counter__box {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+.counter__box2 {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-left: white 1px solid;
+  border-right: white 1px solid;
+}
+.counter h2, .counter .h2 {
+  font-weight: bolder;
+  font-size: 100px;
+}
+.counter h3, .counter .h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.form__adress {
+  border-right: grey 2px solid;
+}
+
+.footer {
+  color: white !important;
+  background-color: #353c45;
 }
 
 /*# sourceMappingURL=custom.css.map */

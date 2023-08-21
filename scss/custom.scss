@@ -1,8 +1,12 @@
 @import "../bootstrap-5.3.1/scss/bootstrap.scss";
 
-// Nav bar //
+html {
+    overflow-x: hidden;
+}
 
-.section_one {
+//HEADER//
+
+.header_section {
     background-image: url(../images/bkg-hero-header.jpg);
     height: 95vh;
     background-size: cover;
@@ -12,12 +16,12 @@
         .logo {
             width: 150px;
         }
-    
+
         .nav-item {
             & a {
                 color: white;
             }
-        }   
+        }
     }
 
     div:nth-child(2) {
@@ -27,41 +31,219 @@
 
         h1 {
             color: white !important;
+
             & span {
                 color: #ffb81c;
             }
-            
+
         }
     }
 
 }
 
+//HEADER'S BUTTONS//
+
 .custom-button {
-    border: 3px solid white; 
-    background-color: rgba(0, 0, 0, 0.3); 
-    color: white; 
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
     transition: background-color 0.3s, border-color 0.3s;
     width: 250px;
     height: 65px;
 }
 
+
 .custom-button:hover {
-    background-color: rgba(0, 0, 0, 0.4); 
-    border-color: white; 
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: white;
 }
 
 .custom-button2 {
     background-color: #ffb81c;
-    border-color: #ffb81c; 
-    color: white; 
+    border-color: #ffb81c;
+    color: white;
     width: 250px;
     height: 65px;
-    border : none;
+    border: none;
 }
 
-// btn btn-outline-light rounded-0 btn-lg px-4 gap-3
+//PROJECT SECTION//
+
+.hash {
+    background-image: linear-gradient(133deg, #f1f5f0 16.67%, #fffffc 16.67%, #fffffc 50%, #f1f5f0 50%, #f1f5f0 66.67%, #fffffc 66.67%, #fffffc 100%);
+    background-size: 12.31px 13.20px;
+}
+
+// IMAGE GALLERY //
+
+.image_gallery {
+    .row {
+        .column {
+            width: 25%;
+            padding: 0;
+            padding-top: 0;
+
+            img {
+                height: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100% !important;
+    }
+}
+
+// Testimonial //
+
+.testimonials {
+    background-image: url(../images/bkg-testimonial.jpg);
+    height: 95vh;
+    background-size: cover;
+    color: white;
+
+    .testimonials__avatar {
+        border-radius: 50%;
+        width: 150px;
+    }
+
+    .testimonials__bubble {
+        background: #715292;
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 3px;
+        width: 660px;
+        height: 120px;
+        position: relative;
+    }
+
+    .testimonials__bubble::after {
+        content: "";
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid #715292;
+        position: absolute;
+        top: 100%;
+        left: 42%;
+    }
+}
+
+.services {
+    .services__pencil {
+        filter: invert(76%) sepia(97%) saturate(485%) hue-rotate(301deg) brightness(95%) contrast(100%);
+
+        &__title {
+            filter: invert(76%) sepia(97%) saturate(485%) hue-rotate(301deg) brightness(95%) contrast(100%);
+        }
+    }
+
+    &__html {
+        filter: invert(89%) sepia(71%) saturate(2546%) hue-rotate(309deg) brightness(103%) contrast(102%);
+
+        &__title {
+            color: #ffb81c;
+        }
+    }
+
+    &__search {
+        filter: invert(76%) sepia(5%) saturate(1281%) hue-rotate(209deg) brightness(100%) contrast(70%);
+
+        &__title {
+            filter: invert(76%) sepia(5%) saturate(1281%) hue-rotate(209deg) brightness(100%) contrast(70%);
+        }
+    }
+}
+
+// LATEST NEWS //
+
+.latestNews {
+    background-color: #353c45;
+    color: white;
+
+    &__button {
+        color: white !important;
+    }
+
+    &__arrow {
+        filter: invert(100%) sepia(0%) saturate(7473%) hue-rotate(43deg) brightness(120%) contrast(99%);
+    }
+
+    &__card1 {
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+    &__card2 {
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+    &__card3 {
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+
+    &__chevron {
+        color: #ffb81c !important;
+        text-decoration: none !important;
+
+        img {
+            filter: invert(70%) sepia(97%) saturate(758%) hue-rotate(342deg) brightness(103%) contrast(102%);
+        }
+    }
+
+}
+
+.counter {
+    background-image: url(../images/bkg-counter.jpg);
+    color: white !important;
+
+    .container {
+        display: flex;
+        text-align: center;
+    }
+
+    &__box {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    &__box2 {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+        border-left: white 1px solid;
+        border-right: white 1px solid;
+    }
+
+    h2 {
+        font-weight: bolder;
+        font-size: 100px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.form {
+    &__adress {
+        border-right: grey 2px solid;
+    }
+}
 
 
-
-
-
+.footer {
+    color: white !important;
+    background-color: #353c45;
+}
